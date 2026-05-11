@@ -11,6 +11,6 @@ Route::delete('/motas/{id}/', [MotasControllerDB::class,'remove']);
 
 Route::post('/motas/', [MotasControllerDB::class,'add']);
 
-Route::view('/motociclos/','asminhasmotasdb');
+Route::view('/motociclos/','asminhasmotas');
 
 Route::redirect('/motos/', '/motas/');

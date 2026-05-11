@@ -27,7 +27,7 @@ class MotasController extends Controller
     public function index() : View {
         $motos = $this->getMotas();
         
-        return view('asminhasmotas', [
+        return view('asminhasmotasdb', [
             'motas' => $motos, 
             'num' => count($motos)
         ]);
